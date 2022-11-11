@@ -1,0 +1,8 @@
+# Experiment Three
+
+## Risk
+Even though we aim to de-identify sensitive disease data, since we are focusing on rare diseases it might be possible to cross reference other data sources to re-identify the data. 
+
+## Experiment Description
+We would like to determine what data features need to be removed in order to effectively eliminate the risk of re-identifying data, while still enabling effective data analysis.
+Simulate a dataset of fully identified rare disease data. We have to simulate this data due to time constraints of the semester and legal issues of acquiring identified health data. Next step is to develop a model to predict the disease type from the data. We will use this model to assess if we can still derive insights from the data when we de-identify the dataset. Next step is to remove features and add noise to the data. There are researched methods to add noise to the data in an optimal way to prevent re-identification. Given the updated dataset, we will attempt to cross reference the original census data to identify each patient’s name and location, and run the predictive model to see if accuracy drops a significant amount. We would try to apply methods such as joining the datasets on common features in order to cross-reference the two datasets. By using a grid search approach to removing features and adding noise, we can essentially determine the optimal amount of features to remove/noise to add in order to completely de-identify the data while allowing predictive models to be effective. 
